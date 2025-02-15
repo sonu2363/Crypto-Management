@@ -151,3 +151,4 @@ class CryptoPriceViewSet(viewsets.ModelViewSet):
             price = serializer.save()
             return Response(self.get_serializer(price).data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+  
